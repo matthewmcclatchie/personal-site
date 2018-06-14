@@ -2,22 +2,25 @@ import React from 'react'
 import { Router, Link } from 'react-static'
 import styled, { injectGlobal } from 'styled-components'
 import { hot } from 'react-hot-loader'
+import styledNormalize from 'styled-normalize'
+
 //
 import Routes from 'react-static-routes'
 
 injectGlobal`
-  body {
+  ${styledNormalize}
+  /* body {
     font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
       'Lucida Grande', sans-serif;
     font-weight: 300;
     font-size: 16px;
     margin: 0;
     padding: 0;
-  }
+  } */
 `
 
 const AppStyles = styled.div`
-  a {
+  /* a {
     text-decoration: none;
     color: #108db8;
     font-weight: bold;
@@ -40,7 +43,7 @@ const AppStyles = styled.div`
 
   img {
     max-width: 100%;
-  }
+  } */
 `
 
 const App = () => (
